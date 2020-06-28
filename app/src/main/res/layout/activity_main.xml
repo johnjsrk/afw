@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="312dp"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:hint="Welcome to\nALS Free Word Pad"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="4dp" />
+<Button
+    android:id="@+id/btn_clear"
+    android:text="◀"
+    android:textSize="25dp"
+    android:fontFamily="@font/nanumgothic" android:textStyle="bold"
+    android:textColor="#000000" android:background="#E0E0E0"
+    android:gravity="center" android:includeFontPadding="false"
+    android:layout_width="36dp" android:layout_height="70dp"
+    android:layout_marginTop="4dp" android:layout_marginStart="320dp" android:layout_marginLeft="0dp"
+    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<Button
+    android:id="@+id/btn_start"
+    android:text="수동"
+    android:textSize="30dp"
+    android:fontFamily="@font/nanumgothic" android:textStyle="bold"
+    android:textColor="#0000FF" android:background="#E0E0E0"
+    android:gravity="center" android:includeFontPadding="false"
+    android:layout_width="85dp" android:layout_height="@dimen/btn_size_h"
+    android:layout_marginTop="@dimen/btn_row1" android:layout_marginStart="@dimen/col1" android:layout_marginLeft="0dp"
+    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<Button
+    android:id="@+id/btn_select"
+    android:text="시작"
+    android:textSize="30dp"
+    android:fontFamily="@font/nanumgothic" android:textStyle="bold"
+    android:textColor="#0000FF" android:background="#E0E0E0"
+    android:gravity="center" android:includeFontPadding="false"
+    android:layout_width="@dimen/btn_size_w" android:layout_height="@dimen/btn_size_h"
+    android:layout_marginTop="@dimen/btn_row1" android:layout_marginStart="@dimen/col2" android:layout_marginLeft="0dp"
+    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<Button
+    android:id="@+id/btn_speed"
+    android:text="선택"
+    android:textSize="30dp"
+    android:fontFamily="@font/nanumgothic" android:textStyle="bold"
+    android:textColor="#0000FF" android:background="#E0E0E0"
+    android:gravity="center" android:includeFontPadding="false"
+    android:layout_width="85dp" android:layout_height="@dimen/btn_size_h"
+    android:layout_marginTop="@dimen/btn_row1" android:layout_marginStart="@dimen/col4" android:layout_marginLeft="0dp"
+    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+<!-- CARD -->
+<TextView
+android:id="@+id/card_00"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row1" android:layout_marginStart="@dimen/col1" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_01"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row1" android:layout_marginStart="@dimen/col2" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_02"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row1" android:layout_marginStart="@dimen/col3" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_03"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row1" android:layout_marginStart="@dimen/col4" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_10"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row2" android:layout_marginStart="@dimen/col1" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_11"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row2" android:layout_marginStart="@dimen/col2" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_12"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row2" android:layout_marginStart="@dimen/col3" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_13"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row2" android:layout_marginStart="@dimen/col4" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_20"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row3" android:layout_marginStart="@dimen/col1" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_21"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row3" android:layout_marginStart="@dimen/col2" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_22"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row3" android:layout_marginStart="@dimen/col3" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_23"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row3" android:layout_marginStart="@dimen/col4" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_30"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row4" android:layout_marginStart="@dimen/col1" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_31"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row4" android:layout_marginStart="@dimen/col2" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_32"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row4" android:layout_marginStart="@dimen/col3" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_33"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row4" android:layout_marginStart="@dimen/col4" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_40"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row5" android:layout_marginStart="@dimen/col1" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_41"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row5" android:layout_marginStart="@dimen/col2" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_42"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row5" android:layout_marginStart="@dimen/col3" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+<TextView
+android:id="@+id/card_43"
+android:text=""
+android:textSize="@dimen/char_size"
+android:fontFamily="@font/nanumgothic" android:textStyle="normal"
+android:textColor="#000000" android:background="#FFFFFF"
+android:gravity="center" android:includeFontPadding="false"
+android:layout_width="@dimen/card_size_w" android:layout_height="@dimen/card_size_h"
+android:layout_marginTop="@dimen/row5" android:layout_marginStart="@dimen/col4" android:layout_marginLeft="0dp"
+app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+<!--
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="390dp"
+        android:layout_height="80dp"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+    <ImageView
+        android:id="@+id/img_00"
+        android:src="@drawable/btn_21"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_01"
+        android:src="@drawable/btn_22"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_02"
+        android:src="@drawable/vow_01"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_03"
+        android:src="@drawable/vow_12_h"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_10"
+        android:src="@drawable/btn_25"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_11"
+        android:src="@drawable/btn_26"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_12"
+        android:src="@drawable/btn_27"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_13"
+        android:src="@drawable/btn_28"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_20"
+        android:src="@drawable/btn_29"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_21"
+        android:src="@drawable/btn_30"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_22"
+        android:src="@drawable/btn_31"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_23"
+        android:src="@drawable/btn_32"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_30"
+        android:src="@drawable/btn_33"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginStart="@dimen/col1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="@dimen/row4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_31"
+        android:src="@drawable/btn_34"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="@dimen/col2"
+        android:layout_marginTop="@dimen/row4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_32"
+        android:src="@drawable/btn_21"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="@dimen/col3"
+        android:layout_marginTop="@dimen/row4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_33"
+        android:src="@drawable/btn_22"
+        android:layout_width="@dimen/card_size_w"
+        android:layout_height="@dimen/card_size_h"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="@dimen/col4"
+        android:layout_marginTop="@dimen/row4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+-->
+</android.support.constraint.ConstraintLayout>

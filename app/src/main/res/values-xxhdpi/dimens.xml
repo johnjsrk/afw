@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 1440p: width= -->
+    <dimen name="card_size_w">90dp</dimen>
+    <dimen name="card_size_h">90dp</dimen>
+    <dimen name="char_size">75dp</dimen>
+    <dimen name="row1">100dp</dimen>
+    <dimen name="row2">200dp</dimen>
+    <dimen name="row3">300dp</dimen>
+    <dimen name="row4">400dp</dimen>
+    <dimen name="row5">500dp</dimen>
+    <dimen name="col1">10dp</dimen>
+    <dimen name="col2">110dp</dimen>
+    <dimen name="col3">210dp</dimen>
+    <dimen name="col4">310dp</dimen>
+
+    <!-- 1080p: width=360dp
+    <dimen name="card_size_w">85dp</dimen>
+    <dimen name="card_size_h">85dp</dimen>
+    <dimen name="char_size">70dp</dimen>
+    <dimen name="row1">80dp</dimen>
+    <dimen name="row2">169dp</dimen>
+    <dimen name="row3">258dp</dimen>
+    <dimen name="row4">347dp</dimen>
+    <dimen name="row5">436dp</dimen>
+    <dimen name="col1">4dp</dimen>
+    <dimen name="col2">93dp</dimen>
+    <dimen name="col3">182dp</dimen>
+    <dimen name="col4">271dp</dimen>
+    <dimen name="btn_size_w">174dp</dimen>
+    <dimen name="btn_size_h">60dp</dimen>
+    <dimen name="btn_row1">530dp</dimen>
+    <dimen name="btn_col1">4dp</dimen>
+    <dimen name="btn_col2">182dp</dimen>
+    -->
+</resources>
